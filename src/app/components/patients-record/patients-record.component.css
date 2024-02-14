@@ -1,0 +1,122 @@
+.myContainer{
+    max-width: 90%;
+    margin: 4rem auto;
+}
+.myContainer h2{
+    font-size: 3.8rem;
+    color: #004379;
+    font-weight: 500;
+}
+.top-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+}
+.top-inner{
+    display: flex;
+    gap: 2rem;
+}
+/* search */
+.search{
+    width: 576px;
+    border: 1px solid #004379;
+    border-radius: 3rem;
+    padding: .8rem 1.2rem;
+}
+.search input{
+    border: none;
+    background: transparent;
+    padding-left: 3rem;
+    color: #004379;
+}
+::placeholder{
+    color: #004379;
+}
+.fa-magnifying-glass{
+    color: #004379;
+}
+/* filter */
+.filter{
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+.filter span{
+    font-size: 2rem;
+    color: #004379;
+    font-weight: 700;
+}
+/* sort */
+.sort {
+font-size: 1.3rem;
+color: #004379;
+}
+/* table */
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse:separate; 
+    border-spacing: 0 1rem;
+
+}
+.table-head{
+    background: #D7E6F8;
+    margin: 500px;
+    color: #004379;
+    border-radius: 1.2rem;
+}
+.table-body{
+    background-color: #E6F1FF;
+    /* margin: 2rem; */
+    color: #004379;
+}
+th{
+    font-size: 1.6rem;
+    padding: 1rem 1.4rem;
+}
+td{
+    /* margin: 5rem; */
+    font-size: 1.6rem;
+    padding: .8rem;
+}
+button{
+    padding: .8rem 2rem;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    background-color: #006FB3;
+    color: #fff;
+}
+.pagination{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #D7E6F8;
+color: #004379;
+border-radius:.6rem;
+padding: .8rem 2rem;
+margin-top: 8rem;
+}
+.pagination span{
+    margin: 0 7rem;
+}
+@media (max-width:850px){
+    .search{
+        width: 300px;
+    }
+    .table-div{
+        /* width: 900px; */
+        overflow-x: auto;
+    }
+    
+}
+@media (max-width:576px){
+    .top-inner{
+        flex-direction: column;
+    }
+    .sort{
+        margin-top: 6rem;
+    }
+    
+}

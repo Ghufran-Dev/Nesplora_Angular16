@@ -1,0 +1,86 @@
+<div class="myContainer">
+    <h2>Clinic data</h2>
+    <section class="form-content">
+        <form action="" method="POST" enctype="multipart/form-data">
+            <div class="form-container">
+                <div class="form-controller f_img">
+                    <label for="f_img">Image</label>
+                    <div class="bg-white">
+                        <input type="file" class="title3" id="picker" #input (click)="pic(input.value)"hidden/>
+                        <img src="" id="preview" alt="" class="title3" width="200" height="200">
+                        <div class="f_img-content">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>&nbsp;&nbsp;
+                            <span>UPLOAD IMAGE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-controller">
+                    <label for="c_name">Clinic name</label>
+                    <input type="text" name="c_name" id="c_name" placeholder="Nesplora">
+                </div>
+                <div class="form-controller">
+                    <label for="page">Web page</label>
+                    <input type="text" name="page" id="page" placeholder="www.nesplora.com">
+                </div>
+                <div class="form-controller">
+                    <label for="email">Contact email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-controller">
+                    <label for="phone">Contact phone</label>
+                    <input type="number" name="phone" id="phone">
+                </div>
+                <div class="text">
+                    <label for="address">Address</label>
+                    <textarea name="address" id="address" cols="20" rows="1"></textarea>
+                </div>
+                <div class="form-controller">
+                    <label for="number">Number</label>
+                    <input type="number" name="number" id="number">
+                </div>
+                <div class="form-controller">
+                    <label for="state">State or Province</label>
+                    <input type="text" name="state" id="state">
+                </div>
+                <div class="form-controller">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city">
+                </div>
+                <div class="form-controller">
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country">
+                </div>
+                <div class="form-controller">
+                    <label for="postal">Zip Code</label>
+                    <input type="text" name="postal" id="postal" placeholder="Enter Postal code">
+                </div>
+            </div>
+            <div class="footer">
+                <div class="checkbox">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <p>Publish my clinic’s data on the web</p>
+                </div>
+                <div class="btns">
+                    <button type="submit" routerLink="/">Save</button>
+                    <button type="submit" routerLink="/">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <div class="map">
+        <iframe width="100%" height="400"
+            src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=52.70967533219885, -8.020019531250002&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </div>
+</div>
+
+<!-- <div class="form-controller">
+        <label for="job">Job Role</label>
+        <select name="job" id="job">
+            <option value="">Select</option>
+            <option value="">Frontend Developer</option>
+            <option value="">Backend Developer</option>
+            <option value="">UI UX Designer</option>
+        </select>
+    </div> -->

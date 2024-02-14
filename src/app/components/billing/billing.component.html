@@ -1,0 +1,80 @@
+<div class="myContainer">
+    <section class="circles">
+        <div class="circle">
+            <div class="num">1</div>
+            <div class="circle-content">Create Account</div>
+        </div>
+        <div class="divider"></div>
+        <div class="circle">
+            <div class="num" >2</div>
+            <div class="circle-content">Billing data</div>
+        </div>
+        <div class="divider num-bg"></div>
+        <div class="circle">
+            <div class="num num-bg">3</div>
+            <div class="circle-content">Choose your plan</div>
+        </div>
+        <div class="divider num-bg"></div>
+        <div class="circle">
+            <div class="num num-bg">4</div>
+            <div class="circle-content">Payment</div>
+        </div>
+    </section>
+    <section class="form-content">
+        <h2>What’s your billing data?</h2>
+
+        <form action="" method="POST">
+            <div class="form-container">
+                <div class="form-controller">
+                    <label for="c_name">Company Name</label>
+                    <input type="text" name="c_name" id="c_name">
+                </div>
+                <div class="form-controller">
+                    <label for="vat">VAT number/Tax ID</label>
+                    <input type="text" name="vat" id="vat">
+                </div>
+                <div class="form-controller">
+                    <label for="first">First Name</label>
+                    <input type="text" name="first" id="first">
+                </div>
+                <div class="form-controller">
+                    <label for="last">Last Name</label>
+                    <input type="text" name="last" id="last">
+                </div>
+                <!-- <div class="form-controller">
+                    <label for="job">Job Role</label>
+                    <select name="job" id="job">
+                        <option value="">Select</option>
+                        <option value="">Frontend Developer</option>
+                        <option value="">Backend Developer</option>
+                        <option value="">UI UX Designer</option>
+                    </select>
+                </div> -->
+                <div class="text">
+                    <label for="address">Address</label>
+                    <textarea name="address" id="address" cols="30" rows="3"></textarea>
+                </div>
+                <div class="form-controller">
+                    <label for="number">Phone number</label>
+                    <input type="number" name="number" id="number">
+                </div>
+                <div class="form-controller">
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country">
+                </div>
+                <div class="form-controller">
+                    <label for="postal">Zip Code</label>
+                    <input type="text" name="postal" id="postal">
+                </div>
+                <div class="form-controller">
+                    <label for="state">State or Province</label>
+                    <input type="text" name="state" id="state">
+                </div>
+            </div>
+            <div class="btn">
+                <p>Mandatory Fields</p>
+                <button type="submit" routerLink="/plan">Continue</button>
+            </div>
+        </form>
+    </section>
+</div>

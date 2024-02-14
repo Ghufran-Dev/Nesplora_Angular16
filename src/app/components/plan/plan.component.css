@@ -1,0 +1,213 @@
+.myContainer{
+    max-width: 90%;
+    margin: 4rem auto;
+}
+.circles{
+    /* justify-content: center; */
+    display: flex;
+    align-items: center;
+    max-width: 70%;
+    margin: 10rem auto;
+}
+.num{
+    width: 6rem;
+    height: 6rem;
+    background-color: #006EB7;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.num-bg{
+    background-color: #BFBFBF;
+    border-bottom: 2px solid #BFBFBF !important;
+}
+.circle{
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.circle-content{
+    color: #004379;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+.divider{
+    border-bottom: 2px solid #006EB7;
+    width: 18%;
+    margin-top: -3rem;
+}
+
+
+/* section content */
+.content{
+    color: #004379;
+    text-align: center;
+}
+.content h2{
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+.content p{
+    font-size: 1.6rem;
+}
+.content span{
+    font-weight: 800;
+    font-size: 2.2rem;
+}
+
+/* :horizontal card */
+.card-horizontal{
+    width:clamp(300px,90%,720px);
+    padding: 3rem 5rem;
+    font-size: 1.8rem;
+    color: #004379;
+    box-shadow: 0px 0px 1px #000;
+    margin: 4rem auto;
+}
+.card-horizontal .hori-top-content{
+    display: flex;
+    align-items: center;
+    gap: 10.5rem;
+}
+.hori-top-content h3{
+    color: #004379;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.fa-user{
+    font-size: 2rem;
+    margin-top: -1.4rem;
+}
+
+.card-horizontal .number{
+    font-size: 4rem;
+    display: block;
+    margin-top: .5rem;
+}
+.card-horizontal .para{
+    margin-top: 2.4rem ;
+}
+p{
+    margin: 0;
+}
+.btn-started{
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+    background-color: #006EB7;
+    font-weight: 600;
+    margin-top: 2.4rem;
+    border: none;
+}
+/* section buttons */
+.btns{
+    border: 1px solid #006EB7;
+    width: 17.8rem;
+    border-radius: .6rem;
+}
+.btns .one{
+    color: white;
+    background: #006EB7;
+    padding: .6rem 2rem;
+    border-radius: .6rem;
+    border: none;
+    font-weight: 700;
+}
+.btns .two{
+    font-weight: 700;
+    color: #006EB7;
+    padding: .6rem 2rem;
+    border-radius: .6rem;
+    border: none;
+}
+
+/* section :vertical card */
+.v-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
+    margin: 3rem auto;
+    align-items: baseline;
+}
+.card-vertical{
+    background-color: #0068BC;
+    width: clamp(250px, 90%, 350px);
+    padding: 4rem 3rem;
+    color: #fff;
+    font-size: 1.8rem;
+    height: fit-content;
+    border-radius: .6rem;
+}
+.card-vertical h3{
+    color: #fff;
+    font-weight: 500;
+}
+.card-vertical .v-card{
+    display: flex;
+    justify-content: space-between;
+}
+.v-price{
+    margin: 4rem 0;
+    font-size: 4rem;
+
+}
+.card-vertical button{
+    background-color: #fff;
+    color: #0068BC;
+    padding: 1.2rem 2rem;
+    border: none;
+    border-radius: .7rem;
+    margin: 4rem 0;
+    font-weight: bold;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.bottom{
+    max-width: 43%;
+    margin: 6rem auto;
+    margin-bottom: 30rem;
+}
+.bottom p{
+    font-weight: 600;
+    color: #004379;
+    font-size: 1.8rem;
+    margin: 2rem 2rem;
+}
+.bottom span{
+    color: #004379;
+}
+@media (max-width:412px){
+    .myContainer{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .v-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:776px){
+    .v-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-horizontal .number{
+        margin-top: 3rem;
+    }
+}

@@ -1,0 +1,24 @@
+<div class="myContainer">
+    <h2 class="heading">My Nesplora</h2>
+    <div class="myCards">
+        <div class="myCard" *ngFor="let i of patient_data let j= index">
+            <div class="top-content ">
+                <h2>{{i.title}}</h2>
+                <img [src]="i.icon" alt="i.title">
+            </div>
+            <p [ngClass]="{'text-decoration-underline':j==5}">{{i.para}}</p>
+            <p [ngClass]="{'fw-bold':j===3}">{{i.para2}}</p>
+            <p [ngClass]="{'bld_u':j==4, 'unbld':j==2}"><b>{{i.para3?.substring(0,6)}}</b>{{i.para3?.substring(6)}}</p>
+            <p><b>{{i.para5?.substring(0,2)}}</b>{{i.para5?.substring(2)}}</p>
+            <p [ngClass]="{'bld_u':j==4}">{{i.para4?.substring(0,16)}}<b>{{i.para4?.substring(16)}}</b></p>
+            <div class="bottom-content">
+                <a routerLink="/">{{i.link_title}}</a>
+                <a routerLink="/">{{i.link_title}}</a>
+                <a routerLink="/">{{i.link_title}}</a>
+            </div>
+            <div class="btn">
+            <button type="submit" class="btn-blue">{{i.btn_title}}</button>
+        </div>
+        </div>
+    </div>
+</div>

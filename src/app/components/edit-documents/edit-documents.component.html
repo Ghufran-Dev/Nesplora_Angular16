@@ -1,0 +1,111 @@
+<div class="myContainer">
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Model box 1
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Nesplora Aquarium Documents</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+
+          <div class="top-section">
+            <div class="top-inner">
+              <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search">
+              </div>
+              <div class="filter">
+                <img src="../../../assets/images/filter.png" alt="filter">
+                <span>Filters</span>
+              </div>
+            </div>
+            <div class="sort">
+              <span>Sort by</span>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+          <table>
+            <thead class="table-head">
+              <tr>
+                <th>Document</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let i of record let j = index" class="table-body">
+                <td>Manual Nesplora Aquarium</td>
+                <td><i class="fa-solid fa-arrow-down"></i>
+                  <a type="button">Download</a>
+                </td>
+
+              </tr>
+            </tbody>
+          </table>
+
+
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+    Model Box 2
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog bg2">
+      <div class="mContent">
+        <div class="mHeader">
+          <h5 class="modal-title text-white p-0">Nesplora Aqua</h5>
+          <i class="fa-solid fa-xmark" data-bs-dismiss="modal"></i>
+        </div>
+        <div class="mFooter">
+          <div class="img">
+            <img src="../../../assets/images/study.jpg" alt="study">
+          </div>
+          <div class="mButtons">
+            <button class="mBtn mBtn1 btn">Start</button>
+            <button class="mBtn mBtn2">Next</button>
+            <button class="mBtn mBtn3">Repeat</button>
+            <button class="mBtn mBtn4">Continue</button>
+            <button class="mBtn mBtn5">Finish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--      <div class="modelContainer">
+          <div class="row g-0">
+            <div class="col-sm-6">
+            <h3>Nesplora Aula</h3>
+          </div>
+            <img src="" alt="">
+          </div>
+          section 
+        </div>
+
+
+
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+</div> -->

@@ -1,0 +1,90 @@
+.myContainer{
+    max-width: 90%;
+    margin:6rem  auto;
+}
+a{
+    font-weight: 700;
+}
+.heading{
+    color: #004379;
+    font-size: 3rem;
+    margin-left: 6.6rem;
+}
+
+.myCards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    place-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.myCard:nth-child(3n){
+    background-color: #005295;
+    color: #fff;
+    
+    .btn-blue{
+        background-color: #fff;
+        color: #005295;
+        font-weight:bold;
+    }
+}
+.myCard{
+    width: 40.0rem;
+    min-height: 30rem;
+    box-shadow: 0px 0px 4px 2px #0000001A;
+    color: #006EB7;
+    padding: 3rem 2rem;
+    background-color: #fff;
+    border-radius: .4rem;
+}
+p{
+    font-size: 1.6rem;
+}
+.top-content{
+    display: flex;
+    justify-content: space-between;
+}
+.top-content img{
+    height: 2.4rem;
+}
+.top-content h2{
+    font-size: 2.2rem;
+    font-weight: 550;
+}
+.bottom-content{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+.bottom-content a{
+    font-size: 1.6rem;
+}
+.btn{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-blue{
+    background-color: #006EB7;
+    color: #fff;
+    border-radius: 3rem;
+    padding: 1.1rem 1.6rem;
+    border: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 4rem;
+    letter-spacing:.07rem;
+}
+.bld_u{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.unbld{
+    font-weight: 100;
+}
+@media (max-width:576px){
+    .heading{
+        margin: 0;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+}

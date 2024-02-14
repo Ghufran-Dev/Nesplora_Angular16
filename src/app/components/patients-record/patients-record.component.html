@@ -1,0 +1,60 @@
+<div class="myContainer">
+    <h2>Patients</h2>
+    <div class="top-section">
+        <div class="top-inner">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search">
+            </div>
+            <div class="filter">
+            <img src="../../../assets/images/filter.png" alt="filter">
+            <span>Filters</span>
+        </div>
+        </div>
+    <div class="sort">
+        <span>Sort by</span>&nbsp;&nbsp;
+        <i class="fa-solid fa-angle-down"></i>
+    </div>
+    </div>
+   <div class="table-div">
+    <table>
+        <thead class="table-head">
+            <tr>
+                <th>Sr</th>
+                <th>Health Record&nbsp;&nbsp;
+        <i class="fa-solid fa-caret-up"></i>
+                </th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Gender</th>
+                <th>Date of birth</th>
+                <th>Creation Date&nbsp;
+                    <img src="../../../assets/images/filter.svg">
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of record let j = index" class="table-body">
+                <td>{{j+1}}</td>
+                <td>{{i.id}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.surname}}</td>
+                <td>{{i.gender}}</td>
+                <td>{{i.dob}}</td>
+                <td>{{i.creation_date}}</td>
+                <td>
+                    <button type="submit" class="btn">EVALUATE</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+   </div>
+   <div class="pagination">
+    <div>
+        1-10 of 56
+    </div>
+    <div><i class="fa-solid fa-chevron-left"></i> <span>1 &nbsp; 2 &nbsp; 3 &nbsp; 4 &nbsp; 5</span><i class="fa-solid fa-chevron-right"></i></div>
+    <div>10&nbsp;&nbsp;<i class="fa-solid fa-chevron-down"></i></div>
+   </div>
+</div>

@@ -1,0 +1,63 @@
+<header>
+    <nav class="navbar navbar-expand-lg p-0">
+        <div class="myContainer">
+            <a class="navbar-brand" routerLink="/auth/login">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" routerLink="/">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/patients-records">USERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/subscription">PATIENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/billing">ASSESSMENTS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" routerLink="/plan" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            RESOURCES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><img src="../../../assets/dropdown_icons/archive.png" alt="Archive-icon"><a class="dropdown-item" routerLink="/">Product Documentation</a></li>
+                            <li><img src="../../../assets/dropdown_icons/Icon awesome-vr-cardboard.png" alt="cardboard-icon"><a class="dropdown-item" routerLink="/">Installation Guide</a></li>
+                            <li><img src="../../../assets/dropdown_icons/support_agent.png" alt="support-icon"><a class="dropdown-item" routerLink="/">Support Center</a></li>
+                            <li><img src="../../../assets/dropdown_icons/school.png" alt="school-icon"><a class="dropdown-item" routerLink="/">Learning Center</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
+                    <li class="user-icon"><i class="fa-solid fa-user"></i></li>
+                    <li class="nav-item dropdown px-0">
+                        <a class="nav-link dropdown-toggle text-white" routerLink="/edit-documents" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Susanna
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="profile_dropdown">
+                            <div class="rectangle"></div>
+                            <li><img src="../../../assets/dropdown_icons/profile.png" alt="profile"><a class="dropdown-item" routerLink="/">Profile</a></li>
+                            <li><img src="../../../assets/dropdown_icons/tag.png" alt="tag"><a class="dropdown-item" routerLink="/">My Subscription</a></li>
+                            <li><img src="../../../assets/dropdown_icons/Icon material-location-city.png" alt="location"><a class="dropdown-item" routerLink="/">Clinic Data</a></li>
+                            <li><img src="../../../assets/dropdown_icons/dashboard_customize.png" alt="dashboard"><a class="dropdown-item" routerLink="/">Customize Reports</a></li>
+                            <li><img src="../../../assets/dropdown_icons/Raggruppa 7.png" alt="invoice"><a class="dropdown-item" routerLink="/">Invoice</a></li>
+                            <li><img src="../../../assets/dropdown_icons/logout.png" alt="logout"><a class="nav-link disabled" routerLink="/">Logout</a></li>
+                        </ul>
+                    </li>
+                    <li><i class="fa-solid fa-gear"></i></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

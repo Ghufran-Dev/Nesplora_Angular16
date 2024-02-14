@@ -1,0 +1,130 @@
+.myContainer{
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.child-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.child-img img{
+    max-height: 103.5%;
+    width: 100%;
+}
+form{
+    font-size: 1.6rem;
+    max-width: 46.9rem;
+    max-height: 62.6rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #88B6D9;
+    border-radius: .8rem;
+    margin: 11vh 6vw;
+    padding: 5rem;
+}
+form h2{
+    color: #004379;
+    font-weight: 600;
+    margin-top: 2rem;
+
+}
+.eee{
+    border: 1px solid #ccc;
+    border-radius: .6rem;
+    padding: .3rem;
+}
+input{
+    border: none;
+    padding: .7rem;
+    font-size: 1.8rem;
+    outline: none;
+    color: #006EB7 !important;
+
+}
+.eee:hover{
+    box-shadow:inset 0px 0px 3px #006EB7 !important;
+}
+
+.pass:hover{
+    box-shadow:inset 0px 0px 3px #006EB7 !important;
+}
+.pass{
+    border-radius: .6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #006EB7;
+}
+.fa-eye{
+    color: #006EB7;
+    font-size: 1.5rem;
+}
+::placeholder{
+    font-size: 1.6rem;
+}
+#emailHelp{
+    color: #006EB7;
+}
+
+.top-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.form-check-input{
+    padding: .7rem;
+    border: 1px solid #ccc;
+}
+.form-check-label{
+    margin-top: .5rem;
+    color: #8D8D8D;
+}
+.btn{
+    background-color:#006EB7;
+    color: #fff;
+    padding: .5rem 4rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+}
+
+.bottom-content{
+    margin-top: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.divider{
+    width: 87%;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 2rem;
+}
+a{
+    text-decoration: none;
+}
+
+@media (max-width:1164px){
+    .myContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width:576px){
+    .top-content{
+        flex-direction: column;
+    }
+    html{
+        font-size: 45% !important;
+    }
+}
